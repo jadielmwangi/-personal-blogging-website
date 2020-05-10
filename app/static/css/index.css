@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+ h3{
+     text-align: center;
+     font-family: 'Balsamiq Sans', cursive;
+     color:black;
+ }
+
+ p{
+     font-size:20px;
+     font-family: 'Heebo', sans-serif;
+ }
+
+ .page-heading{
+     text-align: center;
+ }
+
+ .all{
+   background-color: darkgray;
+    min-height: 80vh;
+    margin:80px;
+    border-radius: 28px;
+    background-repeat: no-repeat;
+ }
+
+ .abt{
+    min-height: 30vh;
+    min-width: 30vh;
+    border-radius: 28px;
+ }
+
+ .contact{
+    background-color: darkgray;
+    min-height: 80vh;
+    margin:80px;
+    border-radius: 28px;
+ }
+ .login{
+    background-color: darkgray;
+    min-height: 80vh;
+    margin:80px;
+    border-radius: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+ }
+ .register{
+    background-color: darkgray;
+    min-height: 80vh;
+    margin:80px;
+    border-radius: 28px;
+    font-family: 'Heebo', sans-serif;
+ }
+
+ .new-blog{
+    background-color: darkgray;
+    min-height: 60vh;
+    margin:80px;
+    border-radius: 28px;
+    font-family: 'Heebo', sans-serif;
+ }
+ .new{
+    font-family: 'Heebo', sans-serif;
+    color:black;
+    font-size:25px;
+    margin:40px;
+    text-align: center;
+ }
+ .row{
+     margin:40px;
+ }
+
+ .navbar-brand{
+     text-align: center;
+ }
+
+ .navbar{
+     background-color: blueviolet;
+     padding:20px;
+     margin-top:5px;
+ }
+
+ h2{
+     text-align: center;
+     margin-bottom:40px;
+     margin-top:150px;
+     font-family: 'Balsamiq Sans', cursive;
+
+     font-size:30px;
+     color:black
+ }
+ .text-light{
+     padding:20px;
+     font-size: 20px;
+ }
+
+ .sign{
+     margin-top:6px;
+ }
+
+ 
+ .log{
+     margin-top: 5px;
+ }
+
+ 
+
+ .comment{
+    background-color:green;
+    font-family: 'Balsamiq Sans', cursive;
+
+    font-size:20px;
+ }
+
+ .view-comment{
+    background-color:lawngreen;
+    font-family: 'Balsamiq Sans', cursive;
+
+    font-size:20px;
+ }
+
+ 
