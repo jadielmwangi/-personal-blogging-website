@@ -1,0 +1,3 @@
+Hello {{user.username}}
+Welcome to jadielBlogSite
+Thankyou for signing to jadielblog platform, it's  my pleasure to welcome you to this app.
