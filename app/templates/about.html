@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+
+
+<!-- styles block -->
+
+{% block styles%}
+{{super()}}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+<!-- Content block -->
+
+<section id="index">
+
+    {% block content %}
+
+    <div class="container-fluid all">
+        <div class="row">
+            <h2>About Me</h2>
+            <div class="card">
+                <div class="col-md-6 abt">
+                    <h3>Bio:</h3>
+                    <p>My name is Jadiel Mwangi Muriithi. I am a First clas honors graduate from JKUAT Meru
+                        campus,<br>currently I am a full stack web development in Moringa school.</p>
+                </div>
+                <div class="col-md-6 abt">
+                    <h3>My Interests:</h3>
+                    <p> I love coding,teaching and mentorship.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock%}
+
+</section>
