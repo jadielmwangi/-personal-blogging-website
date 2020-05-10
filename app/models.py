@@ -19,18 +19,16 @@ class Quote:
         self.quote = quote
 
 
-# class User(UserMixin, db.Model):
-class User( db.Model):
-
+class User(UserMixin, db.Model):
     __tablename__ = 'users'
 
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(255))
-    # email = db.Column(db.String(255), unique = True, index = True)
-    # bio = db.Column(db.String(255))
-    # profile_pic_path = db.Column(db.String())
-    # pass_secure = db.Column(db.String(255))
-    # blog = db.relationship('Blog',backref = 'user',lazy = "dynamic")
+    email = db.Column(db.String(255), unique = True, index = True)
+    bio = db.Column(db.String(255))
+    profile_pic_path = db.Column(db.String())
+    pass_secure = db.Column(db.String(255))
+    blog = db.relationship('Blog',backref = 'user',lazy = "dynamic")
 
     @property
     def password(self):
@@ -54,10 +52,10 @@ class Blog(db.Model):
 
     id = db.Column(db.Integer,primary_key = True)
     blog = db.Column(db.String)
-    # title = db.Column(db.String)
-    # date = db.Column(db.DateTime,default=datetime.utcnow)
-    # user_id = db.Column(db.Integer,db.ForeignKey("users.id"))
-    # comments = db.relationship('Comment',backref = 'blog',lazy="dynamic")
+    title = db.Column(db.String)
+    date = db.Column(db.DateTime,default=datetime.utcnow)
+    user_id = db.Column(db.Integer,db.ForeignKey("users.id"))
+    comments = db.relationship('Comment',backref = 'blog',lazy="dynamic")
 
     def save_blog(self):
         '''
@@ -80,35 +78,35 @@ class Blog(db.Model):
         db.session.delete()
         db.session.commit()
 
-# class Comment(db.Model):
+class Comment(db.Model):
 
-#     __tablename__ = 'comments'
+    __tablename__ = 'comments'
 
-#     id = db.Column(db.Integer,primary_key = True)
-#     comment = db.Column(db.String)
-#     image_path = db.Column(db.String)
-#     blog_id = db.Column(db.Integer,db.ForeignKey('blog.id'))
-#     posted = db.Column(db.DateTime,default=datetime.utcnow)
-#     username = db.Column(db.String)
+    id = db.Column(db.Integer,primary_key = True)
+    comment = db.Column(db.String)
+    image_path = db.Column(db.String)
+    blog_id = db.Column(db.Integer,db.ForeignKey('blog.id'))
+    posted = db.Column(db.DateTime,default=datetime.utcnow)
+    username = db.Column(db.String)
 
 
-#     def save_comments(self):
-#         db.session.add(self)
-#         db.session.commit()
+    def save_comments(self):
+        db.session.add(self)
+        db.session.commit()
         
 
-#     @classmethod
-#     def get_comments(cls,id):
-#         comments = Comment.query.filter_by(blog_id=id).all()
-#         return comments
+    @classmethod
+    def get_comments(cls,id):
+        comments = Comment.query.filter_by(blog_id=id).all()
+        return comments
 
 
-#     @classmethod
-#     def clear_(cls):
-#         Comment.all_comments.clear()
+    @classmethod
+    def clear_(cls):
+        Comment.all_comments.clear()
 
-# class Subscribe(db.Model):
-#     __tablename__ = 'subscribers'
-#     id = db.Column(db.Integer, primary_key = True)
-#     email = db.Column(db.String(50))
+class Subscribe(db.Model):
+    __tablename__ = 'subscribers'
+    id = db.Column(db.Integer, primary_key = True)
+    email = db.Column(db.String(50))
 
