@@ -10,17 +10,14 @@
  p{
      font-size:20px;
      font-family: 'Heebo', sans-serif;
- }
-
- .page-heading{
      text-align: center;
  }
 
+
+
  .all{
    background-color: darkgray;
-    min-height: 80vh;
     margin:80px;
-    border-radius: 28px;
     background-repeat: no-repeat;
  }
 
@@ -41,7 +38,7 @@
     min-height: 80vh;
     margin:80px;
     border-radius: 28px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
  }
  .register{
     background-color: darkgray;
@@ -74,48 +71,35 @@
  }
 
  .navbar{
-     background-color: blueviolet;
+     background-color: greenyellow;
      padding:20px;
      margin-top:5px;
  }
 
- h2{
+ h2,h3{
      text-align: center;
      margin-bottom:40px;
      margin-top:150px;
      font-family: 'Balsamiq Sans', cursive;
 
-     font-size:30px;
-     color:black
+     font-size:large;
+     color:black;
  }
- .text-light{
-     padding:20px;
-     font-size: 20px;
- }
-
- .sign{
-     margin-top:6px;
- }
-
  
- .log{
-     margin-top: 5px;
- }
-
  
 
  .comment{
     background-color:green;
     font-family: 'Balsamiq Sans', cursive;
 
-    font-size:20px;
+    font-size:large;
  }
 
  .view-comment{
     background-color:lawngreen;
     font-family: 'Balsamiq Sans', cursive;
 
-    font-size:20px;
+    font-size:large;
  }
 
  

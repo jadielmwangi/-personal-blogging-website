@@ -6,23 +6,19 @@ This is a personal blogging website where you can create and share your opinions
 
 
 ## User Stories
-These are the behaviours/features that the application implements for use by a user.
 
 As a user I would like to:
 *  view the blog posts on the site
+* sign in to the blog and see random quotes on the sitend 
 *  comment on blog posts
-*  view the most recent posts
 *  receive an email alert when a new post is made by joining a subscription.
-*  see random quotes on the site
-* sign in to the blog.
 * create a blog from the application.
-* delete comments that I find insulting or degrading.
 * update or delete blogs I have created.
 
 ## live link
 
 
-## SetUp / Installation Requirements
+## SetUp and nstallations
 ### Prerequisites
 * python3.6
 * pip
@@ -41,15 +37,8 @@ As a user I would like to:
         $ source virtual/bin/env
         
 * Installing Flask and other Modules
-
-       Use  $ python3.6 -m pip install  to install all your modules
-       for example: python3.6 -m pip install flask
         
-        
-* To run the application, in your terminal:
-        $ chmod a+x start.sh
-        ./start.sh
-
+* To run the application, in your terminal: using chmod a+x start.sh and  ./start.sh
 
 ## Technologies Used
 * Python3.6

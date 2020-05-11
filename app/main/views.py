@@ -176,7 +176,6 @@ def view_comments(id):
     return render_template('view_comment.html',comments = comments, id=id)
 
 
-
 @main.route('/test/<int:id>')  
 def test(id):
     '''
