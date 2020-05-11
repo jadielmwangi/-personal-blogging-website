@@ -10,6 +10,7 @@ def configure_request(app):
 
 def get_quotes():
     '''
+    
     Function that get the json response to our url request
     '''
 
