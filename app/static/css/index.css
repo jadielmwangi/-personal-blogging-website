@@ -1,14 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+h1{
+   text-align: center;
+   color: red;
+   font-size: larger;
+   font-family: 'Merriweather', serif;
+}
  h3{
      text-align: center;
      font-family: 'Balsamiq Sans', cursive;
-     color:black;
+     color:red;
+     font-size: larger;
  }
+ 
+ .text-light{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 15px;
+
+ }
+ container-fluid login{
+    text-align: center;
+    color: red;
+ }
+ 
+
+ h2{
+   text-align: center;
+   font-family: 'Balsamiq Sans', cursive;
+   color:red;
+   font-size: larger;
+}
 
  p{
-     font-size:20px;
+     font-size:large;
      font-family: 'Heebo', sans-serif;
      text-align: center;
  }
@@ -20,12 +46,14 @@
     margin:80px;
     background-repeat: no-repeat;
  }
+ .register{
+   background-color: darkgray;
+   min-height: 80vh;
+   margin:80px;
+   border-radius: 28px;
+   font-family: 'Heebo', sans-serif;
+}
 
- .abt{
-    min-height: 30vh;
-    min-width: 30vh;
-    border-radius: 28px;
- }
 
  .contact{
     background-color: darkgray;
@@ -35,58 +63,44 @@
  }
  .login{
     background-color: darkgray;
-    min-height: 80vh;
-    margin:80px;
-    border-radius: 28px;
+    margin:auto;
+    border-radius: 15x;
 
  }
- .register{
-    background-color: darkgray;
-    min-height: 80vh;
-    margin:80px;
-    border-radius: 28px;
-    font-family: 'Heebo', sans-serif;
- }
+
 
  .new-blog{
     background-color: darkgray;
-    min-height: 60vh;
-    margin:80px;
-    border-radius: 28px;
+    border-radius: 20px;
     font-family: 'Heebo', sans-serif;
  }
  .new{
     font-family: 'Heebo', sans-serif;
     color:black;
-    font-size:25px;
-    margin:40px;
+    font-size:large;
+    margin:30px;
     text-align: center;
  }
- .row{
-     margin:40px;
- }
+ 
 
  .navbar-brand{
      text-align: center;
  }
 
+ .view-comment{
+   background-color:lawngreen;
+   font-family: 'Balsamiq Sans', cursive;
+
+   font-size:large;
+}
+
+
  .navbar{
-     background-color: greenyellow;
-     padding:20px;
-     margin-top:5px;
+     background-color: aliceblue;
+     padding:25px;
+     margin-top:10px;
  }
 
- h2,h3{
-     text-align: center;
-     margin-bottom:40px;
-     margin-top:150px;
-     font-family: 'Balsamiq Sans', cursive;
-
-     font-size:large;
-     color:black;
- }
- 
- 
 
  .comment{
     background-color:green;
@@ -95,11 +109,5 @@
     font-size:large;
  }
 
- .view-comment{
-    background-color:lawngreen;
-    font-family: 'Balsamiq Sans', cursive;
-
-    font-size:large;
- }
-
+ 
  

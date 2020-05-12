@@ -1,4 +1,4 @@
-export SECRET_KEY='blog'
+export SECRET_KEY='jadiel'
 export MAIL_USERNAME='jedielmwangi@gmail.com'
 export MAIL_PASSWORD='church95'
 

@@ -1,8 +1,8 @@
-"""second Migration adds bio in user model
+"""empty message
 
-Revision ID: af935ac67614
-Revises: b068e6d8b890
-Create Date: 2020-05-11 10:38:00.078652
+Revision ID: 57825997b107
+Revises: 
+Create Date: 2020-05-13 13:35:44.456991
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'af935ac67614'
-down_revision = 'b068e6d8b890'
+revision = '57825997b107'
+down_revision = None
 branch_labels = None
 depends_on = None
 
@@ -28,6 +28,8 @@ def upgrade():
     sa.Column('username', sa.String(length=255), nullable=True),
     sa.Column('email', sa.String(length=255), nullable=True),
     sa.Column('bio', sa.String(length=255), nullable=True),
+    sa.Column('profile_pic_path', sa.String(), nullable=True),
+    sa.Column('pass_secure', sa.String(length=255), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_users_email'), 'users', ['email'], unique=True)
