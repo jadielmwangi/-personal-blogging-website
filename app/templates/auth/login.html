@@ -12,7 +12,7 @@
         <h1 class="text-center"> Log in</h1>
     <div class="row">
       
-      <div class="col-md-6 mx-auto bg-primary text-light">
+      <div class="col-md-12 mx-auto bg-secondary text-light">
 
       <!--Flash messages -->
       {% for message in get_flashed_messages() %}
@@ -24,7 +24,7 @@
       <!-- Login form -->
       {{wtf.quick_form(login_form)}}
       
-      <h2 class="sign"> I don't have an account <a href="{{url_for('auth.register')}}">Sign up here:</a></h2>
+      <h2 class="signup"> I don't have an account <a href="{{url_for('auth.register')}}">Sign up here:</a></h2>
      </div>
     </div>
 </div>

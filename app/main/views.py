@@ -185,6 +185,7 @@ def test(id):
     return render_template('test.html',blog= blog)
 
 # Subscribe
+
 @main.route('/subscribe', methods=['GET', 'POST'])
 def subscribe():
     '''

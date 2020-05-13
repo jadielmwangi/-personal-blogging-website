@@ -96,7 +96,7 @@ h1{
 
 
  .navbar{
-     background-color: aliceblue;
+     background-color: rgb(240, 250, 255);
      padding:25px;
      margin-top:10px;
  }
@@ -110,4 +110,7 @@ h1{
  }
 
  
- 
+ .singup{
+    text-align: center;
+    color: red;
+ }
