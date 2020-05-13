@@ -34,7 +34,7 @@
       <div class="col-md-6">
 
 
-        <h1>Today's quote is:  </h1>
+        <h1>Today's quote is: </h1>
 
 
         <blockquote class="blockquote text-center">
@@ -54,16 +54,24 @@
           {{ message }}
         </div>
         {% endfor %}
-        <form action="{{url_for('main.subscribe')}}" method="POST">
+
+  
+        <!-- <form action="{{url_for('main.subscribe')}}" method="POST">
           <div class="form-group">
-            <input type="email" form-control name="email" style="border-radius:20px;" placeholder="Enter your email"
+            <input type="email" form-control name="email" style="border-radius:10px;" placeholder="Enter email..."
               required>
           </div>
           <div class="form-group">
-            <input type="submit" value="subscribe" form-control class="bg-danger text-light">
+            <input type="submit" value="subscribe" form-control class="bg-danger text-light"
+              style="border-radius:10px;">
           </div>
 
-        </form>
+        </form> -->
+
+
+
+
+
 
 
 

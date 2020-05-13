@@ -105,8 +105,10 @@ class Comment(db.Model):
     def clear_(cls):
         Comment.all_comments.clear()
 
-class Subscribe(db.Model):
-    __tablename__ = 'subscribers'
-    id = db.Column(db.Integer, primary_key = True)
-    email = db.Column(db.String(50))
+
+
+# class Subscribe(db.Model):
+#     __tablename__ = 'subscribers'
+#     id = db.Column(db.Integer, primary_key = True)
+#     email = db.Column(db.String(50))
 

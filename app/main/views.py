@@ -196,6 +196,6 @@ def subscribe():
         new_email = Subscribe(email=email)
         db.session.add(new_email)
         db.session.commit()
-        flash('Thankyou for subscription')
+        flash('Thank you for your subscription')
         return redirect(url_for('index'))
         
